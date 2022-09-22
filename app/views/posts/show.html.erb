@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<img width="100%" height="auto" src="<%= (url_for(@post.image)) %>">
+<hr>
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
+<hr>
 
 <p>
   <strong>Body:</strong>
