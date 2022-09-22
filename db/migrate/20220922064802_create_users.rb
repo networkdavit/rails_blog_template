@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.column :email, :string
       t.column :password_hash, :string
       t.column :password_salt, :string
+      t.column :admin :false
     end
   end
 end

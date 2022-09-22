@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_22_064802) do
+ActiveRecord::Schema.define(version: 2022_09_22_072810) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2022_09_22_064802) do
     t.string "email"
     t.string "password_hash"
     t.string "password_salt"
+    t.boolean "admin"
   end
 
 end
