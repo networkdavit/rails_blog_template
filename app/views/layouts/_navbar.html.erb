@@ -47,7 +47,12 @@
         <%= link_to "Posts", posts_path, class:'nav-link'%>
         <form class="form-inline">
             <div style="padding-left: 10px;">
-                <% if current_user %>
+            <% if current_user %>
+                <%= link_to "Sign out", '/signout',class:'btn btn-outline-success'%>
+            <%end%>
+                <%
+=begin%>
+ <% if current_user %>
                     <div class="text-success">
                         <%= current_user.email %> 
                     </div>
@@ -57,7 +62,9 @@
                         <%= "Not logged in" %>
                     </div>
                     <%= link_to "Sign up", 'signup', class:'btn btn-outline-success' %> | <%= link_to "Sign in", '/signin', class:'btn btn-outline-success' %>
-                <% end %>
+                <% end %> 
+<%
+=end%>
             </div>
         </form>
     </nav>

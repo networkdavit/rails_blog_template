@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
   <h1>Posts</h1>
-   <% if current_user %>
     <%= link_to 'New Post', new_post_path %>
     <table class="table">
       <thead>
@@ -29,5 +28,4 @@
         <% end %>
       </tbody>
     </table>
-  <% end %>
 </div>
