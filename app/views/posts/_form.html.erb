@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="blog_title">
+    <%= form.label :image %>
+    <%= form.text_area :image %>
+  </div>
+
+  <div class="blog_title">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="blog_title">
+  <div>
     <%= form.label :body %>
-    <%= form.text_area :body, class: "blog_body" %>
-  </div>
-
-    <div class="blog_title">
-    <%= form.label :image %>
-    <%= form.text_area :image %>
+    <%= form.rich_text_area :body %>
   </div>
 
   <div class="actions">
