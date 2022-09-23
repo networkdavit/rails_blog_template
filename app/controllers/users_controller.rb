@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       redirect_to "/home"
     else
       flash[:alert] = "There was a problem signing up."
-      redirect_to '/signup'
+      redirect_to '/  '
     end
   end
 

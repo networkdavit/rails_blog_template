@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
         redirect_to "/home"
       else
         flash[:alert] = "There was a problem signing in. Please try again."
-        redirect_to signin_path
+        redirect_to "/my_network_admin"
       end
     end
   
