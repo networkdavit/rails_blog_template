@@ -44,11 +44,14 @@
         <%= link_to "CyberDavid", root_path, class:'navbar-brand'%>
         <%= link_to "Home", root_path, class:'nav-link active'%>
         <%= link_to "About", about_path, class:'nav-link'%>
+        <%# <%= link_to "Support", "https://www.buymeacoffee.com/", target: "_blank" class:'nav-link'%>
+        <%# link_to "GOOGLE", "http://www.google.com", target: "_blank", class: "btn btn-large btn-primary" %>
+        <a href="https://www.buymeacoffee.com/", target='__blank' class='nav-link'> Support </a>
         <%= link_to "Posts", posts_path, class:'nav-link'%>
         <form class="form-inline">
             <div style="padding-left: 10px;">
             <% if current_user %>
-                <%= link_to "Sign out", '/signout',class:'btn btn-outline-success'%>
+                <%= link_to "Sign out", '/my_network_admin_sign_out',class:'btn btn-outline-success'%>
             <%end%>
                 <%
 =begin%>

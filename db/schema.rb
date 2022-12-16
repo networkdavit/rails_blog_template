@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_23_193159) do
+ActiveRecord::Schema.define(version: 2022_12_16_111352) do
 
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
@@ -53,16 +53,16 @@ ActiveRecord::Schema.define(version: 2022_09_23_193159) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "password_hash"
     t.string "password_salt"
-    t.boolean "admin"
+    t.boolean "admin", default: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
